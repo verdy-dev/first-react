@@ -1,13 +1,14 @@
 .card{
-    padding: 8px;
-    max-width: 600px;
+    padding: 8px;    
+    max-width: 100%;
     display: flex;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .img-tumb{
-    margin-right: 10px;
+    margin-right: 10px;    
 }
+
 .title{
     font-weight: 600;
     font-size: 18px;

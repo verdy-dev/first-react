@@ -1,5 +1,5 @@
 import React from 'react';
-import Blog from '../../component/blog/Blog';
+import Blog from '../../../component/blog/Blog';
 import './Blogs.css'
 const axios = require('axios');
 
@@ -125,11 +125,13 @@ class Blogs extends React.Component {
                   <textarea name="body" id="body-content" cols="30" rows="10" placeholder="Add Content Blog" value={this.state.formBlogPost.body} onChange={this.handleFormChange}></textarea>
                   <button className="btn-submit" onClick={this.handleSubmit} >Simpan</button>
               </div>
+              <div className="contain">
               {
                   this.state.blog.map((res) => {
                      return <Blog key={res.id} data={res} remove={this.handleRemove} update={this.handleUpdate}/>
                   })                
               }            
+              </div>
           </div>          
       )
     }
