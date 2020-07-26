@@ -11,6 +11,7 @@ const Blog = (props) => {
                 <p className="title">{props.data.title}</p>
                 <p>{props.data.body}</p>  
                 <button className="btn" onClick={ () => props.remove(props.data.id)}>Delete</button>  
+                <button className="btn-update" onClick={ () => props.update(props.data)}>Update</button>  
             </div>            
         </div>
     )
